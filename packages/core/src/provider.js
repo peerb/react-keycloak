@@ -11,7 +11,6 @@ const initialState = {
 export function createReactKeycloakProvider(ReactKeycloakContext) {
   class KeycloakProvider extends React.PureComponent {
     defaultInitConfig = {
-      onLoad: 'check-sso',
       promiseType: 'native',
     }
 
@@ -161,7 +160,6 @@ export function createReactKeycloakProvider(ReactKeycloakContext) {
   KeycloakProvider.defaultProps = {
     autoRefreshToken: true,
     initConfig: {
-      onLoad: 'check-sso',
       promiseType: 'native',
     },
     isLoadingCheck: null,
